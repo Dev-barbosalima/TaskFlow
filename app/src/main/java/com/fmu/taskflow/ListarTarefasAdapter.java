@@ -1,13 +1,15 @@
 package com.fmu.taskflow;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.fmu.taskflow.model.Tarefa;
-import com.google.android.material.textfield.TextInputLayout;
 
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -45,8 +47,12 @@ public class ListarTarefasAdapter extends BaseAdapter {
         txtItemDescricao.setText(tarefa.getDescricao());
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm");
         txtItemDataHora.setText(sdf.format(tarefa.getDataHora()));
+
+        if (tarefa.isRealizado()){
+            txtItemDescricao.setTextColor(Color.RED);
+            txtItemDescricao.setPaintFlags(txtItemDescricao.getPaintFlags()| Paint.STRIKE_THRU_TEXT_FLAG);
+        }
         return view;
     }
-
 
 }
