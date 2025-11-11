@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskFlow">
         <activity
-            android:name=".AlterarTarefaActivity"
+            android:name=".activitys.AlterarTarefaActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activitys.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,12 +24,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CadastrarTarefaActivity"
+            android:name=".activitys.CadastrarTarefaActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".activitys.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".activitys.MainActivity" />
         </activity>
     </application>
 

@@ -1,7 +1,6 @@
-package com.fmu.taskflow;
+package com.fmu.taskflow.activitys;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.view.View;
@@ -9,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.fmu.taskflow.R;
 import com.fmu.taskflow.model.Tarefa;
 
 import java.text.SimpleDateFormat;

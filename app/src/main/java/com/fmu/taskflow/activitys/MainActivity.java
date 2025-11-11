@@ -1,4 +1,4 @@
-package com.fmu.taskflow;
+package com.fmu.taskflow.activitys;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -7,7 +7,6 @@ import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
@@ -18,11 +17,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.fmu.taskflow.DAO.AppDatabase;
+import com.fmu.taskflow.R;
 import com.fmu.taskflow.model.Tarefa;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
