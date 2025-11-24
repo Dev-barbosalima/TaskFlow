@@ -26,7 +26,6 @@ Desenvolvido como parte dos requisitos da disciplina Computação para Dispositi
 
 ## 🚀 Tecnologias Utilizadas
 
-    - Kotlin (Android)
     - Java (Android)
     - SQLite (persistência local)
 
